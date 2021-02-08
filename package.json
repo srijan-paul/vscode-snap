@@ -20,6 +20,12 @@
             "language": "snap",
             "scopeName": "source.snap",
             "path": "./syntaxes/snap.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "snap",
+                "path": "./snippets/snippets.json"
+            }
+        ]
     }
 }

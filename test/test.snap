@@ -1,0 +1,24 @@
+const lib = import "my-lib"
+
+fn double(k) {
+  return k * 2
+}
+
+const four = 4
+const eight = double(four)
+
+if (eight != 8) error("Wow this language doesn't work!")
+
+const myTable = {
+  key: "value",
+  another_key: 123
+}
+
+class Point {
+  init(x, y) {
+    @x = x
+    @y = y
+  }
+}
+
+return myTable.key
