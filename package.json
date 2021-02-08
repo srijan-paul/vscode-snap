@@ -1,0 +1,25 @@
+{
+    "name": "snap-lang-vscode",
+    "displayName": "snap-lang-vscode",
+    "description": "Snap language support for VSCode.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "snap",
+            "aliases": ["snap", "snap"],
+            "extensions": [".snp",".snap"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "snap",
+            "scopeName": "source.snap",
+            "path": "./syntaxes/snap.tmLanguage.json"
+        }]
+    }
+}
