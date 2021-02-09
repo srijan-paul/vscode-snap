@@ -57,12 +57,14 @@
       "name": "string.quoted.double.snap",
       "begin": "\"",
       "end": "\"",
-      "patterns": [
-        {
-          "name": "constant.character.escape.snap",
-          "match": "\\\\."
-        }
-      ]
+      "patterns": [{ "name": "constant.character.escape.snap", "match": "\\\\." }]
+    },
+
+    "singe-quote-strings": {
+      "name": "string.quoted.single.snap",
+      "begin": "'",
+      "end": "'",
+      "patterns": [{ "name": "constant.character.escape.snap", "match": "\\\\." }]
     },
 
     "block": {
