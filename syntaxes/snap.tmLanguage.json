@@ -7,7 +7,7 @@
       "patterns": [
         {
           "name": "keyword.control.snap",
-          "match": "\\b(?:if|while|for|return|else|import)\\b"
+          "match": "\\b(?:if|while|for|return|else|import|do|break)\\b"
         },
         {
           "name": "keyword.operator.snap",
@@ -35,7 +35,7 @@
         },
         {
           "name": "support.function.snap",
-          "match": "\\b(import|delete|setmeta|error)\\b"
+          "match": "\\b(import|delete|setmeta|error|print)\\b"
         }
       ]
     },
@@ -60,7 +60,7 @@
       "patterns": [{ "name": "constant.character.escape.snap", "match": "\\\\." }]
     },
 
-    "singe-quote-strings": {
+    "single_quote_strings": {
       "name": "string.quoted.single.snap",
       "begin": "'",
       "end": "'",
@@ -127,6 +127,7 @@
       "patterns": [
         { "include": "#keywords" },
         { "include": "#strings" },
+        { "include": "#single_quote_strings" },
         { "include": "#block" },
         { "include": "#constants" },
         { "include": "#function" },

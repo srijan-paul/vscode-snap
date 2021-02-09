@@ -1,24 +1,18 @@
-const lib = import "my-lib"
+const math = import 'math'
+const io   = import 'io'
 
-fn double(k) {
-  return k * 2
-}
+const min = 1
+const max = 100
 
-const four = 4
-const eight = double(four)
+const num = math.random(min, max)
 
-if (eight != 8) error("Wow this language doesn't work!")
 
-const myTable = {
-  key: "value",
-  another_key: 123
-}
+let guess = -1
+do {
+  guess = io.get_int('Enter a guess: ')
 
-class Point {
-  init(x, y) {
-    @x = x
-    @y = y
-  }
-}
+  if (guess < num) print("Too low!")
+  else (guess > num) print ("Too high!")
+} while(num != guess)
 
-return myTable.key
+print("Good job! The number was indeed ", num)
