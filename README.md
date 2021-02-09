@@ -5,4 +5,4 @@ text editor.
 
 **Sample:**
 
-[Syntax highlight sample](!/sample/highlight.png)
+[!Syntax highlight sample](/sample/highlight.png)
