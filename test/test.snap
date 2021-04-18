@@ -8,6 +8,10 @@ const num = math.random(min, max)
 
 
 let guess = -1
+
+-- repeatedly take input from user
+-- until the guess is correct.
+
 do {
   guess = io.get_int('Enter a guess: ')
 
@@ -15,4 +19,10 @@ do {
   else (guess > num) print ("Too high!")
 } while(num != guess)
 
+
 print("Good job! The number was indeed ", num)
+
+-- 
+let a = "aaa"
+let b = "bbb"
+let c = a..b
