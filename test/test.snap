@@ -26,3 +26,9 @@ print("Good job! The number was indeed ", num)
 let a = "aaa"
 let b = "bbb"
 let c = a..b
+
+--
+let x = 10
+let dx = 1
+
+x += dx

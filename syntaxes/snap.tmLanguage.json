@@ -7,7 +7,7 @@
       "patterns": [
         {
           "name": "keyword.control.snap",
-          "match": "\\b(?:if|while|for|return|else|import|do|break)\\b"
+          "match": "\\b(?:if|while|for|return|else|import|do|break|continue)\\b"
         },
         {
           "name": "keyword.operator.snap",
@@ -23,7 +23,7 @@
         },
         {
           "name": "keyword.operator.assignment.snap",
-          "match": "(=)"
+          "match": "(=|\\+=|\\-=|\\*=|/=|%=)"
         },
         {
           "name": "keyword.operator.assignment.snap",
