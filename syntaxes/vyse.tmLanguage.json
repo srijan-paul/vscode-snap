@@ -1,32 +1,32 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "snap",
+  "name": "vyse",
   "patterns": [{ "include": "#code" }],
   "repository": {
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.snap",
+          "name": "keyword.control.vyse",
           "match": "\\b(?:if|while|for|return|else|import|do|break|continue)\\b"
         },
         {
-          "name": "keyword.operator.snap",
+          "name": "keyword.operator.vyse",
           "match": "\\b(?:is|not|or|and|typeof)\\b"
         },
         {
-          "name": "keyword.operator.logical.snap",
+          "name": "keyword.operator.logical.vyse",
           "match": "(&&|!|\\|\\|)"
         },
         {
-          "name": "keyword.operator.arithmetic.snap",
+          "name": "keyword.operator.arithmetic.vyse",
           "match": "\\b(\\+|\\-|\\*|/|%|\\^|<<|>>|\\#|\\.\\.)\\b"
         },
         {
-          "name": "keyword.operator.assignment.snap",
+          "name": "keyword.operator.assignment.vyse",
           "match": "(=|\\+=|\\-=|\\*=|/=|%=)"
         },
         {
-          "name": "keyword.operator.assignment.snap",
+          "name": "keyword.operator.assignment.vyse",
           "match": "(==|!=|>=|<=|>|<)"
         },
         {
@@ -34,7 +34,7 @@
           "match": "\\b(let|const|foreach|fn)\\b"
         },
         {
-          "name": "support.function.snap",
+          "name": "support.function.vyse",
           "match": "\\b(import|delete|setproto|error|print)\\b"
         }
       ]
@@ -43,21 +43,21 @@
     "constants": {
       "patterns": [
         {
-          "name": "constant.numeric.snap",
+          "name": "constant.numeric.vyse",
           "match": "\\b(0x[0-9a-fA-F]*|[0-9]+(\\.?[0-9]*)?(e(\\+|-)?[0-9]+)?)\\b"
         },
         {
-          "name": "constant.language.snap",
+          "name": "constant.language.vyse",
           "match": "\\b(true|false|nil)\\b"
         }
       ]
     },
 
     "strings": {
-      "name": "string.quoted.double.snap",
+      "name": "string.quoted.double.vyse",
       "begin": "\"",
       "end": "\"",
-      "patterns": [{ "name": "constant.character.escape.snap", "match": "\\\\." }]
+      "patterns": [{ "name": "constant.character.escape.vyse", "match": "\\\\." }]
     },
 
     "comments": {
@@ -67,25 +67,25 @@
     },
 
     "single_quote_strings": {
-      "name": "string.quoted.single.snap",
+      "name": "string.quoted.single.vyse",
       "begin": "'",
       "end": "'",
-      "patterns": [{ "name": "constant.character.escape.snap", "match": "\\\\." }]
+      "patterns": [{ "name": "constant.character.escape.vyse", "match": "\\\\." }]
     },
 
     "block": {
       "begin": "{",
-      "beginCaptures": { "0": { "name": "punctuation.section.block.begin.snap" } },
+      "beginCaptures": { "0": { "name": "punctuation.section.block.begin.vyse" } },
       "end": "}",
-      "endCaptures": { "0": { "name": "punctuation.section.block.end.snap" } },
+      "endCaptures": { "0": { "name": "punctuation.section.block.end.vyse" } },
       "patterns": [{ "include": "#code" }]
     },
 
     "variables": {
       "patterns": [
-        { "name": "variable.language.snap", "match": "\\b(self)\\b" },
-        { "name": "variable.snap", "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b" },
-        { "name": "variable.other.snap", "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*:" }
+        { "name": "variable.language.vyse", "match": "\\b(self)\\b" },
+        { "name": "variable.vyse", "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b" },
+        { "name": "variable.other.vyse", "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*:" }
       ]
     },
 
@@ -93,7 +93,7 @@
       "patterns": [
         {
           "match": "\\b([a-zA-Z_][A-Za-z0-9_]*)\\s*\\(",
-          "captures": { "1": { "name": "entity.name.function.snap" } }
+          "captures": { "1": { "name": "entity.name.function.vyse" } }
         }
       ]
     },
@@ -115,15 +115,15 @@
         {
           "match": "\\b([a-zA-Z_][A-Za-z0-9_]*)\\s*(:)",
           "captures": {
-            "1": { "name": "entity.name.tag.snap" },
-            "2": { "name": "constant.character.snap" }
+            "1": { "name": "entity.name.tag.vyse" },
+            "2": { "name": "constant.character.vyse" }
           }
         },
         {
           "match": "\\b([a-zA-Z_][A-Za-z0-9_]*)\\s*(\\.)",
           "captures": {
-            "1": { "name": "entity.name.tag.snap" },
-            "2": { "name": "constant.character.snap" }
+            "1": { "name": "entity.name.tag.vyse" },
+            "2": { "name": "constant.character.vyse" }
           }
         }
       ]
@@ -144,5 +144,5 @@
       ]
     }
   },
-  "scopeName": "source.snap"
+  "scopeName": "source.vyse"
 }

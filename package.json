@@ -1,8 +1,8 @@
 {
-  "name": "snap-lang-vscode",
-  "displayName": "snap-lang-vscode",
-  "description": "Snap language support for VSCode.",
-  "version": "0.0.1",
+  "name": "vyse-lang-vscode",
+  "displayName": "Vyse VSCode",
+  "description": "Vyse language highlighting and snippets for VSCode.",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.53.0"
   },
@@ -12,28 +12,28 @@
   "contributes": {
     "languages": [
       {
-        "id": "snap",
+        "id": "vyse",
         "aliases": [
-          "snap",
-          "snap"
+          "vyse",
+          "vyse"
         ],
         "extensions": [
-          ".snp",
-          ".snap"
+          ".vy",
+          ".vyse"
         ],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "snap",
-        "scopeName": "source.snap",
-        "path": "./syntaxes/snap.tmLanguage.json"
+        "language": "vyse",
+        "scopeName": "source.vyse",
+        "path": "./syntaxes/vyse.tmLanguage.json"
       }
     ],
     "snippets": [
       {
-        "language": "snap",
+        "language": "vyse",
         "path": "./snippets/snippets.json"
       }
     ]

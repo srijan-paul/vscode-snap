@@ -3,41 +3,41 @@
     "prefix": "if",
     "body": "if $1 {\n $2\n}",
     "description": "If statement",
-    "scope": "source.snap"
+    "scope": "source.vyse"
   },
 
   "for": {
     "prefix": "for",
     "body": "for i = $1, $2, $3 {\n $4 \n}",
     "description": "for loop",
-    "scope": "source.snap"
+    "scope": "source.vyse"
   },
 
   "while": {
     "prefix": "while",
     "body": "while $1 {\n $2 \n}",
     "description": "while loop",
-    "scope": "source.snap"
+    "scope": "source.vyse"
   },
 
   "else": {
     "prefix": "else",
     "body": "else {\n $1 \n}",
     "description": "else block",
-    "scope": "source.snap"
+    "scope": "source.vyse"
   },
 
   "elsif": {
     "prefix": "elsif",
     "body": "else if $1 {\n $2 \n}",
     "description": "else if block",
-    "scope": "source.snap"
+    "scope": "source.vyse"
   },
 
   "class": {
     "prefix": "class",
     "body": "class $1 {\n \n}",  
     "description": "class", 
-    "scope": "source.snap"
+    "scope": "source.vyse"
   }
 }
