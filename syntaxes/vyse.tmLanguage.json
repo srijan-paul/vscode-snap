@@ -19,7 +19,7 @@
         },
         {
           "name": "keyword.operator.arithmetic.vyse",
-          "match": "\\b(\\+|\\-|\\*|/|%|\\^|<<|>>|\\#|\\.\\.)\\b"
+          "match": "\\b(\\+|\\-|\\*|/|%|\\^|<<|>>|<<<|\\#|\\.\\.)\\b"
         },
         {
           "name": "keyword.operator.assignment.vyse",
@@ -31,7 +31,7 @@
         },
         {
           "name": "keyword.other",
-          "match": "\\b(let|const|foreach|fn)\\b"
+          "match": "\\b(let|const|fn)\\b"
         },
         {
           "name": "support.function.vyse",
@@ -60,10 +60,9 @@
       "patterns": [{ "name": "constant.character.escape.vyse", "match": "\\\\." }]
     },
 
-    "comments": {
-      "name": "comment.line",
-      "begin": "--",
-      "end": "(\r|\n|(\r\n))"
+    "comment": {
+      "name": "comment.line.vyse",
+      "match": "--.*" 
     },
 
     "single_quote_strings": {
@@ -120,7 +119,7 @@
           }
         },
         {
-          "match": "\\b([a-zA-Z_][A-Za-z0-9_]*)\\s*(\\.)",
+          "match": "\\b([a-zA-Z_][A-Za-z0-9_]*)\\s*(\\.){1}",
           "captures": {
             "1": { "name": "entity.name.tag.vyse" },
             "2": { "name": "constant.character.vyse" }
@@ -140,7 +139,7 @@
         { "include": "#table" },
         { "include": "#class" },
         { "include": "#variables" },
-        { "include": "#comments" }
+        { "include": "#comment" }
       ]
     }
   },
