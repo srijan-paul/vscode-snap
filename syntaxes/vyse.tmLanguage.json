@@ -35,7 +35,7 @@
         },
         {
           "name": "support.function.vyse",
-          "match": "\\b(import|setproto|error|print|getproto|assert|byte)\\b"
+          "match": "\\b(import|setproto|error|print|getproto|assert|byte|input)\\b"
         },
         {
           "name": "support.class",

@@ -12,7 +12,7 @@ let guess = -1
 -- until the guess is correct.
 
 do {
-  guess = io.get_int('Enter a guess: ')
+  guess = input('Enter a guess: ')
 
   if (guess < num) print("Too low!")
   else (guess > num) print ("Too high!")
