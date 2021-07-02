@@ -1,15 +1,14 @@
-const math = import 'math'
-const io   = import 'io'
+const math = import('math')
+const io   = import('io')
 
 const min = 1
 const max = 100
 
 const num = math.random(min, max)
 
-
 let guess = -1
 
--- repeatedly take input from user
+-- Repeatedly take input from user
 -- until the guess is correct.
 
 do {
@@ -32,3 +31,21 @@ let x = 10
 let dx = 1
 
 x += dx
+
+
+--
+
+const vector = {
+  make(x, y) {
+    return setproto( { x: x, y: y }, self)
+  },
+
+  log() {
+    print(self.x, self.y)
+  },
+  
+  foo: 'bar'
+}
+
+const o = vector:make(0, 0)
+o:log()

@@ -7,7 +7,7 @@
       "patterns": [
         {
           "name": "keyword.control.vyse",
-          "match": "\\b(?:if|while|for|return|else|import|do|break|continue)\\b"
+          "match": "\\b(?:if|while|for|return|else|break|continue)\\b"
         },
         {
           "name": "keyword.operator.vyse",
@@ -118,14 +118,14 @@
         {
           "match": "\\b([a-zA-Z_][A-Za-z0-9_]*)\\s*(:)",
           "captures": {
-            "1": { "name": "entity.name.tag.vyse" },
+            "1": { "name": "variable.name.vyse" },
             "2": { "name": "constant.character.vyse" }
           }
         },
         {
           "match": "\\b([a-zA-Z_][A-Za-z0-9_]*)\\s*(\\.){1}",
           "captures": {
-            "1": { "name": "entity.name.tag.vyse" },
+            "1": { "name": "variable.name.vyse" },
             "2": { "name": "constant.character.vyse" }
           }
         }
@@ -140,9 +140,9 @@
         { "include": "#block" },
         { "include": "#constants" },
         { "include": "#function" },
+        { "include": "#variables" },
         { "include": "#table" },
         { "include": "#class" },
-        { "include": "#variables" },
         { "include": "#comment" }
       ]
     }
